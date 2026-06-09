@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% extends "base.html" %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
@@ -82,7 +83,7 @@
     </style>
     <script src="https://www.google.com/recaptcha/api.js?render=6LcPbjcqAAAAANs7jyAyNng0113o2FdwFahjD6_1"></script>
 </head>
-<body style="background-image: url('{{ url_for('static', filename='images/1.png') }}');">
+<body style="background-image: url({{ url_for('static', filename='images/1.png') }});">
     <div class="container">
         <img src="{{ url_for('static', filename='images/Ayush.jpg') }}" alt="IMG" class="logo">
         <h1>Sign Up</h1>
